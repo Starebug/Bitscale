@@ -32,7 +32,7 @@ const Pricing = () => {
         <div className="pricing-card">
           <h3>Trial</h3>
           <h4>Try now</h4>
-          <p>Get personalized template</p>
+          <p className='personalise'>Get personalized template</p>
           <ul className="features-list">
             <li><img src="/check-circle.png" alt="Check" /> 25+ data sources</li>
             <li><img src="/check-circle.png" alt="Check" /> GPT4, LinkedIn and others</li>
@@ -111,6 +111,7 @@ const Pricing = () => {
         <div className="pricing-card">
           <h3>Enterprise</h3>
           <h4>Contact Us</h4>
+          <p className='personalise'>For indivisual pricing</p>
           <ul className="features-list">
             <li><img src="/check-circle.png" alt="Check" /> Data privacy certification</li>
             <li><img src="/check-circle.png" alt="Check" /> Priority Support</li>
