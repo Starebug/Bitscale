@@ -79,7 +79,7 @@ const Pricing = () => {
 
         {/* Booster Card */}
         <div className="pricing-card booster">
-          <h3 className='boost'>Booster</h3>
+          <div className='price-main'><h3 className='boost'>Booster</h3><p className='popular'>Popular</p></div>
           <h4 className="price">$499 / month</h4>
           <p className="old-price"><div className='price-pric'>50% off</div><p className='price-data'>$999</p></p>
           <ul className="features-list">
