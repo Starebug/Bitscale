@@ -1,0 +1,256 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.pricing-container {
+    font-size: 13px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.toggle-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.double {
+    display: inline-flex;
+    background-color: #f0f4ff;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.toggle-button.selected {
+    background-color: #fff;
+    color: #333;
+    border-radius: 20px;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* Pricing Card Styles */
+.pricing-card {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.pricing-card h4 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #333;
+}
+
+.price {
+    color: #002dff;
+}
+
+.old-price {
+    display: flex;
+    font-size: 14px;
+}
+
+.features-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    margin-top: 15px;
+}
+
+.features-list li {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center align items vertically */
+    margin-bottom: 8px; /* Space between list items */
+}
+
+.features-list img {
+    width: 20px; /* Adjust width of the icon */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.pricing-description-list {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    margin-top: 8px; /* Space above the list */
+}
+
+.pricing-description-list li {
+    margin-bottom: 4px; /* Space between list items */
+    color: #555; /* Slightly lighter color for description text */
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    font-weight: bold;  
+    margin-top: 10px;
+    width: 100%;
+}
+
+.primary {
+    background: var(--primary-700, #1A56DB);
+    color: white;
+    border: none;
+}
+
+.primary:hover {
+    background-color: #0056b3;
+}
+
+.pricing-card .boost {
+    color: white;
+}
+
+.secondary {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.secondary:hover {
+    background-color: #f0f8ff;
+}
+
+/* Booster Card */
+.pricing-card.booster {
+    background: linear-gradient(180deg, #1E429F 0%, #0B1839 100%);
+    color: white;
+    position: relative;
+}
+
+.pricing-card h3 {
+    color: #1F2A37;
+}
+
+.pricing-card.booster .price {
+    color: #fff;
+}
+
+.pricing-card.booster .old-price {
+    color:  var(--gray-500, #6B7280);
+
+}
+
+/* Divider Line */
+.price-pric{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--Component-Colors-Utility-Success-50, #ECFDF3);
+    border: 1px ;
+    border-radius: 20px;
+    width: 80px;
+    margin-right: 10px;
+    color: var(--Component-Colors-Utility-Success-700, #027A48);
+
+}
+.price-data{
+    font-size: 20px;
+    text-decoration: line-through;
+}
+/* Button Container */
+.divider-line {
+    position: relative;
+    width: 100%; /* Full width for the divider */
+    margin: 20px 0 0 0; /* Add margin-top to create space from the top */
+    text-align: left; /* Ensure text within the divider is left aligned */
+}
+
+/* Divider and Button Container Styles */
+.divider-button-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Align items to the center */
+    padding-left: 20px;
+    margin-top: auto; /* Push this container to the end of the card */
+    width: 100%; /* Full width for proper alignment */
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    margin-top: 8px; /* Space between divider and buttons */
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+}
+
+/* Popular Badge */
+.booster .pricing-card::before {
+    content: "Popular";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #ff5733;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.booste{
+    background-color: white;
+    color:black
+}
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .pricing-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-cards {
+        grid-template-columns: 1fr;
+    }
+}
